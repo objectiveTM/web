@@ -110,7 +110,8 @@ main{
     }
 
     #profile{
-        transform: translateX(20px) perspective(1000px) rotateX(-0.76deg) rotateY(-14.91deg) scale3d(1, 1, 1); 
+        // transform: translateX(-20px) perspective(1000px) rotateX(-0.76deg) rotateY(-14.91deg) scale3d(1, 1, 1); 
+        transform: translateX(-20px); 
         // will-change: transform;
         float: right;
         border-radius: 20px;
@@ -118,6 +119,7 @@ main{
         margin-right: 100px;
         box-shadow: rgb(107, 107, 107) 1px 1px 20px;
         transition: all 1s;
+        transition-delay: 1s;
         // transform: translateX(50px);
         opacity: 0;
         
@@ -130,6 +132,7 @@ main{
             background-color: #E3732F;
         }
     }
+
 
     #cmds{
         margin-left: 100px;
@@ -152,6 +155,20 @@ main{
                 border-radius: 20px;
                 margin-right: 100px;
                 box-shadow: rgb(107, 107, 107) 1px 1px 20px;
+            }
+
+            &.paid-right{
+                transition: all 1s;
+                transform: translateX(-20px);
+                opacity: 0;
+                transition-delay: 1s;
+            }
+            
+            &.paid-left{
+                transition: all 1s;
+                transform: translateX(20px);
+                opacity: 0;
+                transition-delay: .5s;
             }
         }
     }

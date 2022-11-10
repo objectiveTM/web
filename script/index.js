@@ -14,7 +14,6 @@ let paidLeft = new IntersectionObserver((e)=>{
     e.forEach(box=>{
         if (box.isIntersecting){
             box.target.style.opacity = "1";
-            console.log(box.target.style)
             box.target.style.transform = "translateX(0)";
             
         }else{

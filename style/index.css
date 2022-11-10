@@ -15,12 +15,14 @@ main #intro > section > #btns > #btn > a { font-size: 20px; background-color: #f
 main #intro > section > #btns > #btn > a:nth-child(1) { background-color: #5833FF; color: #fff; }
 main #intro > section > #btns > #btn > a:nth-child(2) { background-color: #FFF; color: #000; }
 main #down { padding-top: 20%; display: grid; justify-items: center; font-size: 50px; width: 100%; margin-bottom: 400px; -webkit-animation-name: down; animation-name: down; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-duration: 1s; animation-duration: 1s; }
-main #profile { -webkit-transform: translateX(20px) perspective(1000px) rotateX(-0.76deg) rotateY(-14.91deg) scale3d(1, 1, 1); transform: translateX(20px) perspective(1000px) rotateX(-0.76deg) rotateY(-14.91deg) scale3d(1, 1, 1); float: right; border-radius: 20px; width: 350px; margin-right: 100px; -webkit-box-shadow: #6b6b6b 1px 1px 20px; box-shadow: #6b6b6b 1px 1px 20px; -webkit-transition: all 1s; transition: all 1s; opacity: 0; }
+main #profile { -webkit-transform: translateX(-20px); transform: translateX(-20px); float: right; border-radius: 20px; width: 350px; margin-right: 100px; -webkit-box-shadow: #6b6b6b 1px 1px 20px; box-shadow: #6b6b6b 1px 1px 20px; -webkit-transition: all 1s; transition: all 1s; -webkit-transition-delay: 1s; transition-delay: 1s; opacity: 0; }
 main #profile::after { content: 'aaaaaaaaaaaaaaaaaaa'; display: block; position: relative; width: 1000px; height: 200px; background-color: #E3732F; }
 main #cmds { margin-left: 100px; margin-right: 100px; }
 main #cmds section { font-size: larger; }
 main #cmds section > .description { display: inline-block; margin-top: 200px; margin-left: 50px; margin-bottom: 10px; background-color: #36393F; color: #fff; padding: 10px; border-radius: 10px 10px 10px 1px; }
 main #cmds section > img { border-radius: 20px; margin-right: 100px; -webkit-box-shadow: #6b6b6b 1px 1px 20px; box-shadow: #6b6b6b 1px 1px 20px; }
+main #cmds section.paid-right { -webkit-transition: all 1s; transition: all 1s; -webkit-transform: translateX(-20px); transform: translateX(-20px); opacity: 0; -webkit-transition-delay: 1s; transition-delay: 1s; }
+main #cmds section.paid-left { -webkit-transition: all 1s; transition: all 1s; -webkit-transform: translateX(20px); transform: translateX(20px); opacity: 0; -webkit-transition-delay: .5s; transition-delay: .5s; }
 
 @-webkit-keyframes down { 0%, 100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: .7; }
   50% { -webkit-transform: translateY(10px); transform: translateY(10px); opacity: 1; } }
