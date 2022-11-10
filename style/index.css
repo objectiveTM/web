@@ -6,7 +6,7 @@ header > nav a { color: #000; text-decoration: none; }
 header > nav a:hover { text-decoration: underline; }
 header > img { height: 50px; }
 
-main #intro { background-color: #3D7BF8; height: 450px; background-image: url("/imgs/bots/ore/ore.png"); background-repeat: no-repeat; background-size: 370px; background-position-x: -400px; background-position-y: 100%; -webkit-transition: all 1s; transition: all 1s; -webkit-transition-delay: .5s; transition-delay: .5s; }
+main #intro { background-color: #3D7BF8; height: 450px; background-image: url("/web/imgs/bots/ore/ore.png"); background-repeat: no-repeat; background-size: 370px; background-position-x: -400px; background-position-y: 100%; -webkit-transition: all 1s; transition: all 1s; -webkit-transition-delay: .5s; transition-delay: .5s; }
 main #intro > section { float: right; padding-top: 200px; padding-right: 400px; font-size: 50px; font-weight: 800; color: #ddd; -webkit-transition: all 1s; transition: all 1s; -webkit-transition-delay: 1s; transition-delay: 1s; opacity: 0; -webkit-transform: translateX(20px); transform: translateX(20px); }
 main #intro > section > b { font-size: 70px; font-weight: 900; }
 main #intro > section > b:nth-child(1) { color: #fff; }

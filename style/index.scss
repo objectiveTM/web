@@ -42,12 +42,13 @@ header{
 
 $mianTitle: 50px;
 $mianBold: 70px;
+$page: "/web";
 
 main{
     #intro{
         background-color: #3D7BF8;
         height: 450px;
-        background-image: url("/imgs/bots/ore/ore.png");
+        background-image: url($page+"/imgs/bots/ore/ore.png");
         background-repeat: no-repeat;
         background-size: 370px;
         background-position-x: -400px;
