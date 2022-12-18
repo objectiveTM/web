@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+}
+
+header{
+    $headerMG: 50px;
+    display: flex;
+    position: fixed;
+    background-color: #fff;
+    z-index: 100;
+    
+    
+    padding-left: $headerMG;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    box-shadow: black -1px 1px 5px;
+    
+    > nav{
+        display: flex;
+        margin-left: 50px;
+        align-items: center;
+        gap: $headerMG;
+
+        a{
+            color: #000;
+            text-decoration: none;
+            
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    > img{
+        height: 35px;
+    }
+}

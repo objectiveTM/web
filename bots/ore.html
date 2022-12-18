@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ore봇</title>
+    <link rel="stylesheet" href="/style/ore.css">
+    <link rel="stylesheet" href="/style/all.css">
+</head>
+<body>
+    <iframe src="/layouts/header.html"></iframe>
+    
+    <main>
+        <article id="intro">
+            <section class="paid-right">
+                재미있게 <b>노동</b>을 해보세요!
+                
+                <br/>
+                <div id="btns">
+                    <div id="btn">
+                        <a href="#">봇 초대하기</a>
+                        <a href="#">자세히 알아보기</a>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <div id="down">
+            <img src="/svgs/down.svg" style="cursor: pointer;" onclick="window.scrollTo({top:1000, behavior: 'smooth'})">
+        </div>
+
+        <img src="/imgs/bots/ore/profile.png" id="profile" class="paid-right">
+        <article id="cmds">
+            <section class="paid-left">
+                <div class="description">
+                    광질을 할수 있어요! 
+                </div><br/>
+                <img src="/imgs/bots/ore/mining.png" text="광질을 할수 있어요!">
+            </section>
+
+        </article>
+    </main>
+
+    <iframe src="/layouts/footer.html"></iframe>
+
+
+</body>
+</html>
+
+<script src="/script/ore.js"></script>
