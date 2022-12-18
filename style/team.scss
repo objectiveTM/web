@@ -18,7 +18,7 @@ main{
         &#a{
             &::before{
                 background-color: $blue;
-                height: 1400px;
+                height: 1800px;
             }
 
             > h1{ color: #fff; }
@@ -27,7 +27,7 @@ main{
         &#b{
             &::before{
                 background-color: #fff;
-                height: 700px;
+                height: 1800px;
             }
             
             > h1{ color: #000; }
