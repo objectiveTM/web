@@ -1,5 +1,10 @@
+// https://fonts.google.com/specimen/Jua
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+$blue: #3D7BF8;
 *{
     margin: 0;
+    font-family: jua;
 }
 
 iframe{
@@ -10,4 +15,7 @@ iframe{
 
 #title{
     font-size: 70px;
+    margin-bottom: 100px;
+    color: $blue;
+    font-weight: 300;
 }

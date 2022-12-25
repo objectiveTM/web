@@ -1,7 +1,8 @@
-* { margin: 0; }
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+* { margin: 0; font-family: jua; }
 
 iframe { border: 0; -webkit-box-shadow: 0; box-shadow: 0; width: 100%; }
 
-#title { font-size: 70px; }
+#title { font-size: 70px; margin-bottom: 100px; color: #3D7BF8; font-weight: 300; }
 
 /*# sourceMappingURL=all.css.map */
