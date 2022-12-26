@@ -2,36 +2,15 @@ $blue: #3D7BF8;
 main{
     display: grid;
     justify-items: center;
-    section{
-        &::before{
-            content: '';
-            position: absolute;
-            border-radius: 40% 40% 0 0;
-            width: 100%;
-            z-index: -10;
-        }
-        margin-top: 200px;
-        transform: translateY(200px);
-        transition: all .5s;
-        transition-delay: .2s ;
+    > section{
+        width: 100%;
+        padding-bottom: 100px;
 
-        &#a{
-            &::before{
-                background-color: $blue;
-                height: 1800px;
-            }
-
-            > h1{ color: #fff; }
-            > article{ color: #fff; }
-        }
         &#b{
-            &::before{
-                background-color: #fff;
-                height: 1800px;
-            }
+            background-color: #fff;
             
-            > h1{ color: #000; }
-            > article{ color: #000; }
+            > h1{ color: $blue; }
+            > article{ color: $blue; }
         }
         width: 100%;
         
@@ -43,20 +22,75 @@ main{
 
         > h1{
             margin-top: 100px;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             font-size: 50px;
+            font-weight: 100;
         }
 
-        > article{
+        > div{
+            margin-bottom: 20px;
             display: flex;
-            align-items: center;
-            font-size: 40px;
-            > img{
-                width: 100px;
-                border-radius: 100%;
-                margin-right: 10px;
-            }
+            padding: 10px;
+            gap: 20px;
+            > article{
+                $bd: 10px;
+                box-shadow: #ccc 0 0 5px;
+                border-radius: $bd;
+                > #head{
 
+                    display: flex;
+                    align-items: center;
+                    font-size: 60px;
+                    border-radius: $bd $bd 0 0;
+                    background-color: #fff;
+                    color: #000;
+                    padding: 15px 100px 10px 15px;
+                    > img{
+                        width: 80px;
+                        border-radius: 10px;
+                        margin-right: 10px;
+                        box-shadow: #ccc 0 0 5px 0;
+                    }
+                    z-index: 999;
+                }
+                > #description{
+                    background-color: #fff;
+                    color: #bbb;
+                    font-size: 40px;
+                    border-radius: 0 0 $bd $bd;
+                    padding-left: 15px;
+                    padding-right: 20px;
+                    
+                    > #urls{
+                        display: flex;
+                        padding-top: 5px;
+                        gap: 10px;
+                        > a > img{
+                            background-color: #fff;
+                            box-shadow: #ccc 0 0 5px 0;
+                            width: 40px;
+                            padding: 5px;
+                            border-radius: 10px;
+                            transition: all .2s;
+
+                            &:hover{
+                                transform: translateY(-1px);
+                                box-shadow: #ccc 0 0 10px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1625px) {
+    main > section > div{
+        flex-direction: column;
+        flex-wrap: wrap;
+        #head{
+            
         }
     }
 }
