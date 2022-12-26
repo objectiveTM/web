@@ -19,3 +19,9 @@ iframe{
     color: $blue;
     font-weight: 300;
 }
+
+@media (max-width: 1625px) {
+    #title{
+        font-size: 50px;
+    }
+}

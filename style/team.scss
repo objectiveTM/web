@@ -86,11 +86,20 @@ main{
 }
 
 @media (max-width: 1625px) {
-    main > section > div{
-        flex-direction: column;
-        flex-wrap: wrap;
-        #head{
-            
+    main > section{
+        > h1{
+            font-size: 40px;
+            font-weight: 100;
+        }
+        > div{
+            flex-direction: column;
+            flex-wrap: wrap;
+            > article{
+                > #head{
+                    font-size: 40px;
+                    padding: 15px 50px 10px 15px;
+                }
+            }
         }
     }
 }

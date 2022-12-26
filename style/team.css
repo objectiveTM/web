@@ -13,7 +13,9 @@ main > section > div > article > #description > #urls { display: -webkit-box; di
 main > section > div > article > #description > #urls > a > img { background-color: #fff; -webkit-box-shadow: #ccc 0 0 5px 0; box-shadow: #ccc 0 0 5px 0; width: 40px; padding: 5px; border-radius: 10px; -webkit-transition: all .2s; transition: all .2s; }
 main > section > div > article > #description > #urls > a > img:hover { -webkit-transform: translateY(-1px); transform: translateY(-1px); -webkit-box-shadow: #ccc 0 0 10px 0; box-shadow: #ccc 0 0 10px 0; }
 
-@media (max-width: 1625px) { main > section > div { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: wrap; flex-wrap: wrap; } }
+@media (max-width: 1625px) { main > section > h1 { font-size: 40px; font-weight: 100; }
+  main > section > div { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  main > section > div > article > #head { font-size: 40px; padding: 15px 50px 10px 15px; } }
 ::-webkit-scrollbar { display: none; }
 
 /*# sourceMappingURL=team.css.map */
