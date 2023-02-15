@@ -1,21 +1,79 @@
-main { display: grid; justify-items: center; }
-main > section { width: 100%; padding-bottom: 100px; width: 100%; display: grid; gap: 50px; justify-items: center; }
-main > section#b { background-color: #fff; }
-main > section#b > h1 { color: #3D7BF8; }
-main > section#b > article { color: #3D7BF8; }
-main > section > h1 { margin-top: 100px; margin-bottom: 20px; font-size: 50px; font-weight: 100; }
-main > section > div { margin-bottom: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 10px; gap: 20px; }
-main > section > div > article { -webkit-box-shadow: #ccc 0 0 5px; box-shadow: #ccc 0 0 5px; border-radius: 10px; }
-main > section > div > article > #head { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 60px; border-radius: 10px 10px 0 0; background-color: #fff; color: #000; padding: 15px 100px 10px 15px; z-index: 999; }
-main > section > div > article > #head > img { width: 80px; border-radius: 10px; margin-right: 10px; -webkit-box-shadow: #ccc 0 0 5px 0; box-shadow: #ccc 0 0 5px 0; }
-main > section > div > article > #description { background-color: #fff; color: #bbb; font-size: 40px; border-radius: 0 0 10px 10px; padding-left: 15px; padding-right: 20px; }
-main > section > div > article > #description > #urls { display: -webkit-box; display: -ms-flexbox; display: flex; padding-top: 5px; gap: 10px; }
-main > section > div > article > #description > #urls > a > img { background-color: #fff; -webkit-box-shadow: #ccc 0 0 5px 0; box-shadow: #ccc 0 0 5px 0; width: 40px; padding: 5px; border-radius: 10px; -webkit-transition: all .2s; transition: all .2s; }
-main > section > div > article > #description > #urls > a > img:hover { -webkit-transform: translateY(-1px); transform: translateY(-1px); -webkit-box-shadow: #ccc 0 0 10px 0; box-shadow: #ccc 0 0 10px 0; }
+main {
+  display: grid;
+  justify-items: center; }
+  main > section {
+    width: 100%;
+    padding-bottom: 100px;
+    width: 100%;
+    display: grid;
+    gap: 50px;
+    justify-items: center; }
+    main > section#b {
+      background-color: #fff; }
+      main > section#b > h1 {
+        color: #3D7BF8; }
+      main > section#b > article {
+        color: #3D7BF8; }
+    main > section > h1 {
+      margin-top: 100px;
+      margin-bottom: 20px;
+      font-size: 50px;
+      font-weight: 100; }
+    main > section > div {
+      margin-bottom: 20px;
+      display: flex;
+      padding: 10px;
+      gap: 20px; }
+      main > section > div > article {
+        box-shadow: #ccc 0 0 5px;
+        border-radius: 10px; }
+        main > section > div > article > #head {
+          display: flex;
+          align-items: center;
+          font-size: 60px;
+          border-radius: 10px 10px 0 0;
+          background-color: #fff;
+          color: #000;
+          padding: 15px 100px 10px 15px;
+          z-index: 999; }
+          main > section > div > article > #head > img {
+            width: 80px;
+            border-radius: 10px;
+            margin-right: 10px;
+            box-shadow: #ccc 0 0 5px 0; }
+        main > section > div > article > #description {
+          background-color: #fff;
+          color: #bbb;
+          font-size: 40px;
+          border-radius: 0 0 10px 10px;
+          padding-left: 15px;
+          padding-right: 20px; }
+          main > section > div > article > #description > #urls {
+            display: flex;
+            padding-top: 5px;
+            gap: 10px; }
+            main > section > div > article > #description > #urls > a > img {
+              background-color: #fff;
+              box-shadow: #ccc 0 0 5px 0;
+              width: 40px;
+              padding: 5px;
+              border-radius: 10px;
+              transition: all .2s; }
+              main > section > div > article > #description > #urls > a > img:hover {
+                transform: translateY(-1px);
+                box-shadow: #ccc 0 0 10px 0; }
 
-@media (max-width: 1625px) { main > section > h1 { font-size: 40px; font-weight: 100; }
-  main > section > div { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-  main > section > div > article > #head { font-size: 40px; padding: 15px 50px 10px 15px; } }
-::-webkit-scrollbar { display: none; }
+@media (max-width: 1625px) {
+  main > section > h1 {
+    font-size: 40px;
+    font-weight: 100; }
+  main > section > div {
+    flex-direction: column;
+    flex-wrap: wrap; }
+    main > section > div > article > #head {
+      font-size: 40px;
+      padding: 15px 50px 10px 15px; } }
+::-webkit-scrollbar {
+  display: none; }
 
 /*# sourceMappingURL=team.css.map */
