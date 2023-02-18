@@ -26,6 +26,11 @@ iframe{
     }
 }
 
-header > img{
-    cursor: pointer;
+header{
+    > img{
+        cursor: pointer;
+    }
+    > nav > a{
+        cursor: pointer;
+    }
 }
