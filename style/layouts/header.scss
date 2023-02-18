@@ -3,6 +3,7 @@
 }
 
 header{
+    transition: all .5s;
     $headerMG: 50px;
     display: flex;
     position: fixed;
@@ -19,12 +20,14 @@ header{
     box-shadow: rgba(0, 0, 0, 0.253) -1px 1px 5px;
     
     > nav{
+        transition: all .5s;
         display: flex;
         margin-left: $headerMG;
         align-items: center;
         gap: $headerMG;
 
         > a{
+            transition: all .5s;
             color: #000;
             text-decoration: none;
             
@@ -35,12 +38,13 @@ header{
     }
     > img{
         height: 35px;
+        transition: all .5s;
     }
 }
 
-@media (max-width: 1625px) {
+@media (max-width: 500px) {
     header{
-        $headerMG: 30px;
+        $headerMG: 20px;
         padding-left: $headerMG;
         > nav{
             gap: $headerMG;
